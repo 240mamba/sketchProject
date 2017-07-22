@@ -17,6 +17,8 @@ h1{
   font-size: 40px;
 }
 
+/*Pixel Trail area*/
+
 .container {
   width: 500px;
   height: 500px;
@@ -27,19 +29,24 @@ h1{
   border: solid 4px #404040;
 }
 
+/*Pixel Trail effect*/
+
+.container div {
+  transition: background-color 0.5s .6s ease;
+}
+
 
 .container div:hover {
     background-color: #444;
     cursor: pointer;
+    transition: 0;
 }
 
-.draw {
-  background: #444;
-}
+/*User input area*/
 
 .user {
   margin: 10px auto;
-  width: 90;
+  width: 100%;
   text-align: center;
 }
 
@@ -61,7 +68,7 @@ button {
   border-color: transparent;
   background-color: #ecf0f1;
   height: 34px;
-  width: 10%;
+  width: 30%;
   font-size: 20px;
   letter-spacing: 1.5px;
   margin-top: -5px;
